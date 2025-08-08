@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Inventario Biblioteca</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Registrar Préstamo</h2>
+            <form id="loanForm">
+                <input type="text" id="titulo" placeholder="Título del libro" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="text" id="usuario" placeholder="Nombre del usuario" required>
+                <input type="date" id="fecha" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <h2>Buscar</h2>
+            <input type="text" id="searchInput" placeholder="Buscar por título, autor o usuario">
+        </section>
+
+        <section class="table-section">
+            <h2>Lista de Préstamos</h2>
+            <table id="loanTable">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Usuario</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="export-section">
+            <button id="exportBtn">📂 Exportar Respaldo</button>
+        </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
